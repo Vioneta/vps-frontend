@@ -10,7 +10,7 @@ import { showToast } from "../vioneta-frontend/src/util/toast";
       return;
     }
     if (!hass) {
-      console.error("[HACS/extra/reload_handler] hass not found");
+      console.error("[PLUGINS/extra/reload_handler] hass not found");
       return;
     }
     (haDocument as any).___hacs_reload_handler_active = true;
@@ -18,7 +18,7 @@ import { showToast } from "../vioneta-frontend/src/util/toast";
       showToast(haDocument, {
         duration: 300 * 1000,
         dismissable: false,
-        message: "[HACS] You need to reload your browser",
+        message: "[PLUGINS] You need to reload your browser",
         action: {
           action: () => {
             mainWindow.location.href = mainWindow.location.href;

@@ -17,13 +17,9 @@ export const aboutHacsmarkdownContent = (hacs: Hacs) => `
 - [Configuration](${documentationUrl({
   path: "/docs/use/configuration/basic",
 })})
-- [FAQ](${documentationUrl({ path: "/docs/faq" })})
-- [GitHub](https://github.com/hacs)
-- [Discord](https://discord.gg/apgchf8)
-- [Become a GitHub sponsor? ❤️](https://github.com/sponsors/ludeeus)
-- [BuyMe~~Coffee~~Beer? 🍺🙈](https://buymeacoffee.com/ludeeus)
+- [GitHub](https://github.com/Vioneta)
 
 ***
 
-_Everything you find in HACS is **not** tested by Home Assistant, that includes HACS itself.
-The HACS and Home Assistant teams do not support **anything** you find here._`;
+_Everything you find in PLUGINS is **not** tested by Vioneta, that includes PLUGINS itself.
+The PLUGINS and Vioneta teams do not support **anything** you find here._`;

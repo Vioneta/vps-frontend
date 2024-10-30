@@ -116,7 +116,7 @@ class HacsFromDialog extends LitElement {
     try {
       await this._dialogParams.saveAction(this._dialogParams.data);
     } catch (err: any) {
-      this._errors = { base: err?.message || "Unkown error, check Home Assistant logs" };
+      this._errors = { base: err?.message || "Unkown error, check Vioneta logs" };
     }
     this._waiting = false;
 

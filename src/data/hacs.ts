@@ -2,7 +2,7 @@ import type { LocalizeFunc } from "../../vioneta-frontend/src/common/translation
 import type { HacsLocalizeKeys } from "../data/localize";
 import type { RepositoryBase, RepositoryType } from "./repository";
 
-export const APP_FULL_NAME = "Home Assistant Community Store";
+export const APP_FULL_NAME = "Vioneta Plugins Store";
 
 export interface HacsInfo {
   categories: RepositoryType[];

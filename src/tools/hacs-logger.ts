@@ -3,9 +3,9 @@ export class HacsLogger {
 
   constructor(name?: string) {
     if (name) {
-      this.prefix = `[HACS.${name}]`;
+      this.prefix = `[PLUGINS.${name}]`;
     } else {
-      this.prefix = `[HACS]`;
+      this.prefix = `[PLUGINS]`;
     }
   }
 

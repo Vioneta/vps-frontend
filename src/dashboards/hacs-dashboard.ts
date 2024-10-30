@@ -231,7 +231,7 @@ export class HacsDashboard extends LitElement {
               });
             } else {
               showAlertDialog(this, {
-                title: "HACS is disabled",
+                title: "PLUGINS is disabled",
                 text: this.hacs.info.disabled_reason,
               });
             }

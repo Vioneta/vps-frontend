@@ -38,15 +38,15 @@
     "last_updated": "Activity"
   },
   "confirm": {
-    "home_assistant_version_not_correct": "You are running Home Assistant version '{haversion}', but this repository requires minimum version '{minversion}' to be installed."
+    "home_assistant_version_not_correct": "You are running Vioneta version '{haversion}', but this repository requires minimum version '{minversion}' to be installed."
   },
   "my": {
     "not_supported": "This redirect is not supported. Check the {link} for the supported redirects and the version they were introduced.",
-    "faq_link": "My Home Assistant FAQ",
+    "faq_link": "My Vioneta FAQ",
     "error": "An unknown error occurred",
     "repository_not_found": "Repository {repository} not found",
     "add_repository_title": "Add custom repository",
-    "add_repository_description": "This will add the custom repository '{repository}' to be tracked by HACS. Do you want to add it?"
+    "add_repository_description": "This will add the custom repository '{repository}' to be tracked by PLUGINS. Do you want to add it?"
   },
   "dialog_about": {
     "integration_version": "Integration version",
@@ -82,7 +82,7 @@
     "no_releases": "No releases found",
     "release": "Release",
     "release_warning": "It is not advised to use this section to do a rollback, restore a backup instead.",
-    "restart": "Remember that you need to restart Home Assistant before changes to integrations (custom_components) are applied.",
+    "restart": "Remember that you need to restart Vioneta before changes to integrations (custom_components) are applied.",
     "selector_note": "The version selector will be removed in a future release. If you need to install a specific version, you can do so by using the service call for update entities.",
     "note_downloaded": "When downloaded, this will be located in {location}",
     "lovelace_instruction": "After the download completes, since you are not using Lovelace in storage mode, you need to add the resource with these settings manually:"
@@ -95,7 +95,7 @@
     "author": "Author",
     "no_info": "The developer has not provided any more information for this repository",
     "open_repo": "Open repository",
-    "download": "Download this repository with HACS"
+    "download": "Download this repository with PLUGINS"
   },
   "repository_card": {
     "dismiss": "dismiss",
@@ -119,7 +119,7 @@
     "default": "Available for download"
   },
   "menu": {
-    "about": "About HACS",
+    "about": "About PLUGINS",
     "custom_repositories": "Custom repositories",
     "open_issue": "Open issue",
     "dismiss": "Dismiss new repositories",
@@ -136,7 +136,7 @@
     },
     "configured": {
       "title": "Integration is configured",
-      "message": "The {name} integration is configured or ignored. You need to delete the configuration for it before removing it from HACS.",
+      "message": "The {name} integration is configured or ignored. You need to delete the configuration for it before removing it from PLUGINS.",
       "confirm": "Go to integrations"
     }
   },

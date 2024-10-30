@@ -33,7 +33,7 @@ export const repositoryMenuItems = memoizeOne(
     repository: RepositoryBase,
     localize: LocalizeFunc<HacsLocalizeKeys>,
   ) => [
-    ...(element.nodeName === "HACS-DASHBOARD"
+    ...(element.nodeName === "PLUGINS-DASHBOARD"
       ? [
           {
             path: mdiInformation,
@@ -161,7 +161,7 @@ const _repositoryRemove = async (
   repository: RepositoryBase,
 ) => {
   await repositoryUninstall(element.hass, String(repository.id));
-  if (element.nodeName === "HACS-REPOSITORY-PANEL") {
+  if (element.nodeName === "PLUGINS-REPOSITORY-PANEL") {
     history.back();
   }
 };
