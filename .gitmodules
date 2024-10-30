@@ -1,0 +1,4 @@
+[submodule "vioneta-frontend"]
+	path = vioneta-frontend
+	url = https://github.com/Vioneta/frontend.git
+	branch = dev
