@@ -3,10 +3,10 @@ from pathlib import Path
 from setuptools import setup, find_packages
 
 setup(
-    name="plugin-store-frontend",
+    name="vps-frontend",
     version="main",
-    description="The HACS frontend",
-    url="https://github.com/Vioneta/plugin-store-frontend",
+    description="The VPS frontend",
+    url="https://github.com/Vioneta/vps-frontend",
     author="Vioneta",
     author_email="admin@vioneta.com",
     packages=find_packages(include=["hacs_frontend", "hacs_frontend.*"]),
