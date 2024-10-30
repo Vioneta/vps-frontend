@@ -2,16 +2,16 @@ import "@material/mwc-button/mwc-button";
 import "@material/mwc-linear-progress/mwc-linear-progress";
 import { CSSResultGroup, LitElement, css, html, nothing } from "lit";
 import { customElement, property, state } from "lit/decorators";
-import { fireEvent } from "../../../homeassistant-frontend/src/common/dom/fire_event";
-import "../../../homeassistant-frontend/src/components/ha-dialog";
-import { createCloseHeading } from "../../../homeassistant-frontend/src/components/ha-dialog";
-import "../../../homeassistant-frontend/src/components/ha-form/ha-form";
+import { fireEvent } from "../../../vioneta-frontend/src/common/dom/fire_event";
+import "../../../vioneta-frontend/src/components/ha-dialog";
+import { createCloseHeading } from "../../../vioneta-frontend/src/components/ha-dialog";
+import "../../../vioneta-frontend/src/components/ha-form/ha-form";
 import type {
   HaFormDataContainer,
   HaFormSchema,
-} from "../../../homeassistant-frontend/src/components/ha-form/types";
-import "../../../homeassistant-frontend/src/components/ha-settings-row";
-import type { HomeAssistant } from "../../../homeassistant-frontend/src/types";
+} from "../../../vioneta-frontend/src/components/ha-form/types";
+import "../../../vioneta-frontend/src/components/ha-settings-row";
+import type { HomeAssistant } from "../../../vioneta-frontend/src/types";
 import { HacsDispatchEvent } from "../../data/common";
 import { websocketSubscription } from "../../data/websocket";
 import type { HacsFormDialogParams } from "./show-hacs-dialog";

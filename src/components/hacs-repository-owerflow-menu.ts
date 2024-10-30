@@ -11,10 +11,10 @@ import {
   mdiReload,
 } from "@mdi/js";
 import memoizeOne from "memoize-one";
-import { mainWindow } from "../../homeassistant-frontend/src/common/dom/get_main_window";
-import { navigate } from "../../homeassistant-frontend/src/common/navigate";
-import { getConfigEntries } from "../../homeassistant-frontend/src/data/config_entries";
-import { showConfirmationDialog } from "../../homeassistant-frontend/src/dialogs/generic/show-dialog-box";
+import { mainWindow } from "../../vioneta-frontend/src/common/dom/get_main_window";
+import { navigate } from "../../vioneta-frontend/src/common/navigate";
+import { getConfigEntries } from "../../vioneta-frontend/src/data/config_entries";
+import { showConfirmationDialog } from "../../vioneta-frontend/src/dialogs/generic/show-dialog-box";
 import type { RepositoryBase } from "../data/repository";
 import {
   repositoriesClearNewRepository,
@@ -24,7 +24,7 @@ import {
 import type { HacsDashboard } from "../dashboards/hacs-dashboard";
 import type { HacsRepositoryDashboard } from "../dashboards/hacs-repository-dashboard";
 import { showHacsDownloadDialog, showHacsFormDialog } from "./dialogs/show-hacs-dialog";
-import { LocalizeFunc } from "../../homeassistant-frontend/src/common/translations/localize";
+import { LocalizeFunc } from "../../vioneta-frontend/src/common/translations/localize";
 import { HacsLocalizeKeys } from "../data/localize";
 
 export const repositoryMenuItems = memoizeOne(

@@ -1,13 +1,13 @@
 // Compat needs to be first import
-import "../homeassistant-frontend/src/resources/compatibility";
+import "../vioneta-frontend/src/resources/compatibility";
 
 import "./main";
 
-import("../homeassistant-frontend/src/resources/roboto");
-import("../homeassistant-frontend/src/resources/ha-style");
+import("../vioneta-frontend/src/resources/roboto");
+import("../vioneta-frontend/src/resources/ha-style");
 
 import("@polymer/polymer/lib/utils/settings").then(({ setCancelSyntheticClickEvents }) =>
-  setCancelSyntheticClickEvents(false),
+  setCancelSyntheticClickEvents(false)
 );
 
 const styleEl = document.createElement("style");

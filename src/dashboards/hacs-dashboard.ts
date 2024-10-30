@@ -14,32 +14,32 @@ import type { CSSResultGroup, TemplateResult } from "lit";
 import { LitElement, html, nothing } from "lit";
 import { customElement, property, query, state } from "lit/decorators";
 import memoize from "memoize-one";
-import { relativeTime } from "../../homeassistant-frontend/src/common/datetime/relative_time";
-import { storage } from "../../homeassistant-frontend/src/common/decorators/storage";
-import { mainWindow } from "../../homeassistant-frontend/src/common/dom/get_main_window";
-import { navigate } from "../../homeassistant-frontend/src/common/navigate";
+import { relativeTime } from "../../vioneta-frontend/src/common/datetime/relative_time";
+import { storage } from "../../vioneta-frontend/src/common/decorators/storage";
+import { mainWindow } from "../../vioneta-frontend/src/common/dom/get_main_window";
+import { navigate } from "../../vioneta-frontend/src/common/navigate";
 import type {
   DataTableColumnContainer,
   DataTableRowData,
   SortingDirection,
-} from "../../homeassistant-frontend/src/components/data-table/ha-data-table";
-import "../../homeassistant-frontend/src/layouts/hass-tabs-subpage-data-table";
+} from "../../vioneta-frontend/src/components/data-table/ha-data-table";
+import "../../vioneta-frontend/src/layouts/hass-tabs-subpage-data-table";
 
-import "../../homeassistant-frontend/src/components/ha-button-menu";
-import "../../homeassistant-frontend/src/components/ha-fab";
-import "../../homeassistant-frontend/src/components/ha-form/ha-form";
-import "../../homeassistant-frontend/src/components/ha-markdown";
-import "../../homeassistant-frontend/src/components/ha-menu";
-import "../../homeassistant-frontend/src/components/ha-menu-item";
+import "../../vioneta-frontend/src/components/ha-button-menu";
+import "../../vioneta-frontend/src/components/ha-fab";
+import "../../vioneta-frontend/src/components/ha-form/ha-form";
+import "../../vioneta-frontend/src/components/ha-markdown";
+import "../../vioneta-frontend/src/components/ha-menu";
+import "../../vioneta-frontend/src/components/ha-menu-item";
 
-import { LocalizeFunc } from "../../homeassistant-frontend/src/common/translations/localize";
-import { HaFormSchema } from "../../homeassistant-frontend/src/components/ha-form/types";
-import { HaMenu } from "../../homeassistant-frontend/src/components/ha-menu";
-import "../../homeassistant-frontend/src/components/ha-svg-icon";
-import { PageNavigation } from "../../homeassistant-frontend/src/layouts/hass-tabs-subpage";
-import { haStyle } from "../../homeassistant-frontend/src/resources/styles";
-import type { HomeAssistant, Route } from "../../homeassistant-frontend/src/types";
-import { brandsUrl } from "../../homeassistant-frontend/src/util/brands-url";
+import { LocalizeFunc } from "../../vioneta-frontend/src/common/translations/localize";
+import { HaFormSchema } from "../../vioneta-frontend/src/components/ha-form/types";
+import { HaMenu } from "../../vioneta-frontend/src/components/ha-menu";
+import "../../vioneta-frontend/src/components/ha-svg-icon";
+import { PageNavigation } from "../../vioneta-frontend/src/layouts/hass-tabs-subpage";
+import { haStyle } from "../../vioneta-frontend/src/resources/styles";
+import type { HomeAssistant, Route } from "../../vioneta-frontend/src/types";
+import { brandsUrl } from "../../vioneta-frontend/src/util/brands-url";
 import {
   showHacsCustomRepositoriesDialog,
   showHacsFormDialog,
@@ -54,7 +54,7 @@ import { repositoriesClearNew } from "../data/websocket";
 import { HacsStyles } from "../styles/hacs-common-style";
 import { documentationUrl } from "../tools/documentation";
 import { typeIcon } from "../tools/type-icon";
-import { showAlertDialog } from "../../homeassistant-frontend/src/dialogs/generic/show-dialog-box";
+import { showAlertDialog } from "../../vioneta-frontend/src/dialogs/generic/show-dialog-box";
 
 const defaultKeyData = {
   title: "",

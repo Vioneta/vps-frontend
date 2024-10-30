@@ -6572,9 +6572,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polymer/polymer@patch:@polymer/polymer@3.5.1#./homeassistant-frontend/.yarn/patches/@polymer/polymer/pr-5569.patch::locator=hacs-frontend%40workspace%3A.":
+"@polymer/polymer@patch:@polymer/polymer@3.5.1#./vioneta-frontend/.yarn/patches/@polymer/polymer/pr-5569.patch::locator=hacs-frontend%40workspace%3A.":
   version: 3.5.1
-  resolution: "@polymer/polymer@patch:@polymer/polymer@npm%3A3.5.1#./homeassistant-frontend/.yarn/patches/@polymer/polymer/pr-5569.patch::version=3.5.1&hash=0f00db&locator=hacs-frontend%40workspace%3A."
+  resolution: "@polymer/polymer@patch:@polymer/polymer@npm%3A3.5.1#./vioneta-frontend/.yarn/patches/@polymer/polymer/pr-5569.patch::version=3.5.1&hash=0f00db&locator=hacs-frontend%40workspace%3A."
   dependencies:
     "@webcomponents/shadycss": "npm:^1.9.1"
   checksum: 10/31cc3b40866b302c305684e8070aae2428af4949f56c716a5d8bdbd685d9d1f309b308981264a317cb242ae53038f373cf3fb25b96f9e0cb02dc505082605a52
@@ -12268,7 +12268,7 @@ __metadata:
     gulp-json-transform: "npm:0.5.0"
     gulp-rename: "npm:2.0.0"
     gulp-zopfli-green: "npm:6.0.2"
-    hls.js: "patch:hls.js@npm%3A1.5.7#~/homeassistant-frontend/.yarn/patches/hls.js-npm-1.5.7-f5bbd3d060.patch"
+    hls.js: "patch:hls.js@npm%3A1.5.7#~/vioneta-frontend/.yarn/patches/hls.js-npm-1.5.7-f5bbd3d060.patch"
     home-assistant-js-websocket: "npm:9.4.0"
     html-minifier-terser: "npm:7.2.0"
     husky: "npm:9.1.5"
@@ -12332,7 +12332,7 @@ __metadata:
     webpack-stats-plugin: "npm:1.1.3"
     webpackbar: "npm:6.0.1"
     weekstart: "npm:2.0.0"
-    workbox-build: "patch:workbox-build@npm%3A7.1.1#~/homeassistant-frontend/.yarn/patches/workbox-build-npm-7.1.1-a854f3faae.patch"
+    workbox-build: "patch:workbox-build@npm%3A7.1.1#~/vioneta-frontend/.yarn/patches/workbox-build-npm-7.1.1-a854f3faae.patch"
     workbox-cacheable-response: "npm:7.1.0"
     workbox-core: "npm:7.1.0"
     workbox-expiration: "npm:7.1.0"
@@ -12444,9 +12444,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hls.js@patch:hls.js@npm%3A1.5.7#~/homeassistant-frontend/.yarn/patches/hls.js-npm-1.5.7-f5bbd3d060.patch":
+"hls.js@patch:hls.js@npm%3A1.5.7#~/vioneta-frontend/.yarn/patches/hls.js-npm-1.5.7-f5bbd3d060.patch":
   version: 1.5.7
-  resolution: "hls.js@patch:hls.js@npm%3A1.5.7#~/homeassistant-frontend/.yarn/patches/hls.js-npm-1.5.7-f5bbd3d060.patch::version=1.5.7&hash=77028d"
+  resolution: "hls.js@patch:hls.js@npm%3A1.5.7#~/vioneta-frontend/.yarn/patches/hls.js-npm-1.5.7-f5bbd3d060.patch::version=1.5.7&hash=77028d"
   checksum: 10/8c3eadf08e2486d2de9323c6b7cad38c1aa809f2dd7f799f437a7bbca617ff43b8833fb56e33f324f94609d6a949fb34609a25de6dcebcc5365e297e1b53b977
   languageName: node
   linkType: hard
@@ -13769,9 +13769,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"leaflet-draw@patch:leaflet-draw@npm%3A1.0.4#./homeassistant-frontend/.yarn/patches/leaflet-draw-npm-1.0.4-0ca0ebcf65.patch::locator=hacs-frontend%40workspace%3A.":
+"leaflet-draw@patch:leaflet-draw@npm%3A1.0.4#./vioneta-frontend/.yarn/patches/leaflet-draw-npm-1.0.4-0ca0ebcf65.patch::locator=hacs-frontend%40workspace%3A.":
   version: 1.0.4
-  resolution: "leaflet-draw@patch:leaflet-draw@npm%3A1.0.4#./homeassistant-frontend/.yarn/patches/leaflet-draw-npm-1.0.4-0ca0ebcf65.patch::version=1.0.4&hash=790842&locator=hacs-frontend%40workspace%3A."
+  resolution: "leaflet-draw@patch:leaflet-draw@npm%3A1.0.4#./vioneta-frontend/.yarn/patches/leaflet-draw-npm-1.0.4-0ca0ebcf65.patch::version=1.0.4&hash=790842&locator=hacs-frontend%40workspace%3A."
   checksum: 10/70e43ef0307dd3995dc392609a627b349070f25a57b908a4ab07e17b579878fdd0ff090847ca42826b933c547e324a4e560f35a8a1417f8209e702c3512e4d8a
   languageName: node
   linkType: hard
@@ -16766,9 +16766,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sortablejs@patch:sortablejs@npm%3A1.15.2#~/homeassistant-frontend/.yarn/patches/sortablejs-npm-1.15.2-73347ae85a.patch":
+"sortablejs@patch:sortablejs@npm%3A1.15.2#~/vioneta-frontend/.yarn/patches/sortablejs-npm-1.15.2-73347ae85a.patch":
   version: 1.15.2
-  resolution: "sortablejs@patch:sortablejs@npm%3A1.15.2#~/homeassistant-frontend/.yarn/patches/sortablejs-npm-1.15.2-73347ae85a.patch::version=1.15.2&hash=1591ab"
+  resolution: "sortablejs@patch:sortablejs@npm%3A1.15.2#~/vioneta-frontend/.yarn/patches/sortablejs-npm-1.15.2-73347ae85a.patch::version=1.15.2&hash=1591ab"
   checksum: 10/d44399e9ca660157c76b13705eaa26191f71c4bd025e2d47b9f7e50a8f9bdb7deaaa2783a8032e55f39627fa4007042bcfd62cb4bbeb2931f6a5d6ee06047e2e
   languageName: node
   linkType: hard
@@ -18792,9 +18792,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-build@patch:workbox-build@npm%3A7.1.1#~/homeassistant-frontend/.yarn/patches/workbox-build-npm-7.1.1-a854f3faae.patch":
+"workbox-build@patch:workbox-build@npm%3A7.1.1#~/vioneta-frontend/.yarn/patches/workbox-build-npm-7.1.1-a854f3faae.patch":
   version: 7.1.1
-  resolution: "workbox-build@patch:workbox-build@npm%3A7.1.1#~/homeassistant-frontend/.yarn/patches/workbox-build-npm-7.1.1-a854f3faae.patch::version=7.1.1&hash=cd5737"
+  resolution: "workbox-build@patch:workbox-build@npm%3A7.1.1#~/vioneta-frontend/.yarn/patches/workbox-build-npm-7.1.1-a854f3faae.patch::version=7.1.1&hash=cd5737"
   dependencies:
     "@apideck/better-ajv-errors": "npm:^0.3.1"
     "@babel/core": "npm:^7.24.4"

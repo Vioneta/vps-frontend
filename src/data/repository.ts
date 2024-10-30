@@ -1,4 +1,4 @@
-import type { HomeAssistant } from "../../homeassistant-frontend/src/types";
+import type { HomeAssistant } from "../../vioneta-frontend/src/types";
 
 export type RepositoryType =
   | "appdaemon"

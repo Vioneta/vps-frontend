@@ -1,5 +1,5 @@
-import { mainWindow } from "../homeassistant-frontend/src/common/dom/get_main_window";
-import { showToast } from "../homeassistant-frontend/src/util/toast";
+import { mainWindow } from "../vioneta-frontend/src/common/dom/get_main_window";
+import { showToast } from "../vioneta-frontend/src/util/toast";
 
 (() => {
   const haDocument = mainWindow?.document?.querySelector("home-assistant");

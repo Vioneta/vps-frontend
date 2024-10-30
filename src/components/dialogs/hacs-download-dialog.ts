@@ -3,20 +3,20 @@ import "@material/mwc-linear-progress/mwc-linear-progress";
 import { css, CSSResultGroup, html, LitElement, nothing } from "lit";
 import { customElement, property, state } from "lit/decorators";
 import memoizeOne from "memoize-one";
-import { fireEvent } from "../../../homeassistant-frontend/src/common/dom/fire_event";
-import { mainWindow } from "../../../homeassistant-frontend/src/common/dom/get_main_window";
-import { computeRTL } from "../../../homeassistant-frontend/src/common/util/compute_rtl";
-import "../../../homeassistant-frontend/src/components/ha-alert";
-import "../../../homeassistant-frontend/src/components/ha-button";
-import "../../../homeassistant-frontend/src/components/ha-circular-progress";
-import "../../../homeassistant-frontend/src/components/ha-dialog";
-import "../../../homeassistant-frontend/src/components/ha-expansion-panel";
-import "../../../homeassistant-frontend/src/components/ha-form/ha-form";
-import "../../../homeassistant-frontend/src/components/ha-list-item";
+import { fireEvent } from "../../../vioneta-frontend/src/common/dom/fire_event";
+import { mainWindow } from "../../../vioneta-frontend/src/common/dom/get_main_window";
+import { computeRTL } from "../../../vioneta-frontend/src/common/util/compute_rtl";
+import "../../../vioneta-frontend/src/components/ha-alert";
+import "../../../vioneta-frontend/src/components/ha-button";
+import "../../../vioneta-frontend/src/components/ha-circular-progress";
+import "../../../vioneta-frontend/src/components/ha-dialog";
+import "../../../vioneta-frontend/src/components/ha-expansion-panel";
+import "../../../vioneta-frontend/src/components/ha-form/ha-form";
+import "../../../vioneta-frontend/src/components/ha-list-item";
 
-import { relativeTime } from "../../../homeassistant-frontend/src/common/datetime/relative_time";
-import { showConfirmationDialog } from "../../../homeassistant-frontend/src/dialogs/generic/show-dialog-box";
-import type { HomeAssistant } from "../../../homeassistant-frontend/src/types";
+import { relativeTime } from "../../../vioneta-frontend/src/common/datetime/relative_time";
+import { showConfirmationDialog } from "../../../vioneta-frontend/src/dialogs/generic/show-dialog-box";
+import type { HomeAssistant } from "../../../vioneta-frontend/src/types";
 import { HacsDispatchEvent } from "../../data/common";
 import {
   fetchRepositoryInformation,

@@ -1,4 +1,4 @@
-const haEnv = require("../../homeassistant-frontend/build-scripts/env.cjs");
+const haEnv = require("../../vioneta-frontend/build-scripts/env.cjs");
 const fs = require("fs-extra");
 const paths = require("./paths.cjs");
 const path = require("path");
@@ -12,7 +12,7 @@ haEnv.version = () => version;
 module.exports = {
   ...haEnv,
   haFrontendVersion: () =>
-    fs.readFileSync(path.resolve(paths.root_dir, ".git/modules/homeassistant-frontend/HEAD"), {
+    fs.readFileSync(path.resolve(paths.root_dir, ".git/modules/vioneta-frontend/HEAD"), {
       encoding: "utf-8",
     }),
 };

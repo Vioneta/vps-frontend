@@ -1,6 +1,6 @@
 import { css, CSSResultGroup } from "lit";
 import { hacsButtonStyle, hacsIconStyle, hacsLinkStyle } from "./element-styles";
-import { haStyle } from "../../homeassistant-frontend/src/resources/styles";
+import { haStyle } from "../../vioneta-frontend/src/resources/styles";
 
 export const hacsCommonClasses = css`
   .warning {

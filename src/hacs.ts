@@ -3,10 +3,10 @@ import { property, state } from "lit/decorators";
 import type { Hacs } from "./data/hacs";
 import { HacsLogger } from "./tools/hacs-logger";
 import type { HacsLocalizeKeys } from "./data/localize";
-import { ProvideHassLitMixin } from "../homeassistant-frontend/src/mixins/provide-hass-lit-mixin";
-import type { HomeAssistant } from "../homeassistant-frontend/src/types";
-import { computeLocalize } from "../homeassistant-frontend/src/common/translations/localize";
-import { getTranslation } from "../homeassistant-frontend/src/util/common-translation";
+import { ProvideHassLitMixin } from "../vioneta-frontend/src/mixins/provide-hass-lit-mixin";
+import type { HomeAssistant } from "../vioneta-frontend/src/types";
+import { computeLocalize } from "../vioneta-frontend/src/common/translations/localize";
+import { getTranslation } from "../vioneta-frontend/src/util/common-translation";
 import { fetchHacsInfo, getRepositories, websocketSubscription } from "./data/websocket";
 import { HacsDispatchEvent } from "./data/common";
 

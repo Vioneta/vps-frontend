@@ -1,4 +1,4 @@
-import type { HomeAssistant } from "../../homeassistant-frontend/src/types";
+import type { HomeAssistant } from "../../vioneta-frontend/src/types";
 import type { Hacs, HacsInfo } from "./hacs";
 import type { HacsDispatchEvent } from "./common";
 import type { RepositoryBase } from "./repository";

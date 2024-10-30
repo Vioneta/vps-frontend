@@ -1,6 +1,6 @@
 import fs from "fs";
 
-let rawcore = fs.readFileSync("./homeassistant-frontend/src/translations/en.json");
+let rawcore = fs.readFileSync("./vioneta-frontend/src/translations/en.json");
 let rawhacs = fs.readFileSync("./src/localize/languages/en.json");
 
 const core = JSON.parse(rawcore);

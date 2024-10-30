@@ -1,8 +1,8 @@
 const path = require("path");
-const haPaths = require("../../homeassistant-frontend/build-scripts/paths.cjs");
+const haPaths = require("../../vioneta-frontend/build-scripts/paths.cjs");
 
 const hacsPaths = {
-  home_assistant_frontend_root: path.resolve(__dirname, "../../homeassistant-frontend"),
+  home_assistant_frontend_root: path.resolve(__dirname, "../../vioneta-frontend"),
   root_dir: path.resolve(__dirname, "../../"),
   source_dir: path.resolve(__dirname, "../../src"),
   build_dir: path.resolve(__dirname, "../../build"),

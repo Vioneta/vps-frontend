@@ -1,6 +1,6 @@
 import fs from "fs";
 
-let rawcore = fs.readFileSync("./homeassistant-frontend/package.json");
+let rawcore = fs.readFileSync("./vioneta-frontend/package.json");
 let rawhacs = fs.readFileSync("./package.json");
 
 const core = JSON.parse(rawcore);
@@ -17,18 +17,18 @@ enableGlobalCache: false
 
 nodeLinker: node-modules
 
-yarnPath: ./homeassistant-frontend/.yarn/releases/yarn-${core.packageManager.split("@")[1]}.cjs
+yarnPath: ./vioneta-frontend/.yarn/releases/yarn-${core.packageManager.split("@")[1]}.cjs
 `,
 );
 
-fs.copyFileSync(`./homeassistant-frontend/.browserslistrc`, `.browserslistrc`);
+fs.copyFileSync(`./vioneta-frontend/.browserslistrc`, `.browserslistrc`);
 fs.rmSync("./src/resources/polyfills", { recursive: true, force: true });
 fs.mkdirSync("./src/resources/polyfills", { recursive: true });
-for (const file of fs.readdirSync("./homeassistant-frontend/src/resources/polyfills", {
+for (const file of fs.readdirSync("./vioneta-frontend/src/resources/polyfills", {
   recursive: true,
 })) {
   fs.copyFileSync(
-    `./homeassistant-frontend/src/resources/polyfills/${file}`,
+    `./vioneta-frontend/src/resources/polyfills/${file}`,
     `./src/resources/polyfills/${file}`,
   );
 }
@@ -40,13 +40,13 @@ fs.writeFileSync(
   "./src/resources/polyfills/intl-polyfill.ts",
   intlPolyfill.replace(
     "../../util/common-translation",
-    "../../../homeassistant-frontend/src/util/common-translation",
+    "../../../vioneta-frontend/src/util/common-translation",
   ),
   { encoding: "utf-8" },
 );
 
 fs.copyFileSync(
-  `./homeassistant-frontend/src/translations/translationMetadata.json`,
+  `./vioneta-frontend/src/translations/translationMetadata.json`,
   `./src/localize/languages/translationMetadata.json`,
 );
 
@@ -55,9 +55,9 @@ const replacePatches = (deps) =>
     Object.entries(deps).map(([key, val]) => [
       key,
       val
-        .replace("#.yarn/patches/", "#./homeassistant-frontend/.yarn/patches/")
-        .replace("#./.yarn/patches/", "#./homeassistant-frontend/.yarn/patches/")
-        .replace("#~/.yarn/patches/", "#~/homeassistant-frontend/.yarn/patches/"),
+        .replace("#.yarn/patches/", "#./vioneta-frontend/.yarn/patches/")
+        .replace("#./.yarn/patches/", "#./vioneta-frontend/.yarn/patches/")
+        .replace("#~/.yarn/patches/", "#~/vioneta-frontend/.yarn/patches/"),
     ]),
   );
 

@@ -8,7 +8,7 @@ import path from "path";
 import {
   htmlMinifierOptions,
   terserOptions,
-} from "../../homeassistant-frontend/build-scripts/bundle.cjs";
+} from "../../vioneta-frontend/build-scripts/bundle.cjs";
 import env from "./env.cjs";
 import paths from "./paths.cjs";
 

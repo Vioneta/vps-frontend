@@ -1,4 +1,4 @@
-import type { LocalizeFunc } from "../../homeassistant-frontend/src/common/translations/localize";
+import type { LocalizeFunc } from "../../vioneta-frontend/src/common/translations/localize";
 import type { HacsLocalizeKeys } from "../data/localize";
 import type { RepositoryBase, RepositoryType } from "./repository";
 

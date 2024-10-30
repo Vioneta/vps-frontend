@@ -1,10 +1,10 @@
 import { customElement, property, state } from "lit/decorators";
-import { listenMediaQuery } from "../homeassistant-frontend/src/common/dom/media_query";
+import { listenMediaQuery } from "../vioneta-frontend/src/common/dom/media_query";
 import {
   HassRouterPage,
   RouterOptions,
-} from "../homeassistant-frontend/src/layouts/hass-router-page";
-import type { HomeAssistant, Route } from "../homeassistant-frontend/src/types";
+} from "../vioneta-frontend/src/layouts/hass-router-page";
+import type { HomeAssistant, Route } from "../vioneta-frontend/src/types";
 
 import type { Hacs } from "./data/hacs";
 

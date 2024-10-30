@@ -1,5 +1,5 @@
-const haWebpack = require("../../homeassistant-frontend/build-scripts/webpack.cjs");
-const haPaths = require("../../homeassistant-frontend/build-scripts/paths.cjs");
+const haWebpack = require("../../vioneta-frontend/build-scripts/webpack.cjs");
+const haPaths = require("../../vioneta-frontend/build-scripts/paths.cjs");
 const webpack = require("webpack");
 const path = require("path");
 const log = require("fancy-log");
@@ -50,9 +50,9 @@ const createWebpackConfig = ({
               if (sourcePath.startsWith("node_modules") || sourcePath.startsWith("webpack")) {
                 return `no-source/${sourcePath}`;
               }
-              if (sourcePath.startsWith("homeassistant-frontend/src/")) {
+              if (sourcePath.startsWith("vioneta-frontend/src/")) {
                 return `https://raw.githubusercontent.com/home-assistant/frontend/${env.haFrontendVersion()}/${
-                  sourcePath.split("homeassistant-frontend/")[1]
+                  sourcePath.split("vioneta-frontend/")[1]
                 }`;
               }
               if (sourcePath.startsWith("src/")) {
