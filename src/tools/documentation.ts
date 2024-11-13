@@ -1,3 +1,3 @@
 export const documentationUrl = (options?: { path?: string }) => {
-  return `https://www.hacs.xyz${options?.path || ""}`;
+  return `https://vps.vioneta.com${options?.path || ""}`;
 };

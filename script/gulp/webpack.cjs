@@ -51,12 +51,12 @@ const createWebpackConfig = ({
                 return `no-source/${sourcePath}`;
               }
               if (sourcePath.startsWith("vioneta-frontend/src/")) {
-                return `https://raw.githubusercontent.com/home-assistant/frontend/${env.haFrontendVersion()}/${
+                return `https://raw.githubusercontent.com/Vioneta/frontend/${env.haFrontendVersion()}/${
                   sourcePath.split("vioneta-frontend/")[1]
                 }`;
               }
               if (sourcePath.startsWith("src/")) {
-                return `https://raw.githubusercontent.com/hacs/frontend/${env.version()}/${sourcePath}`;
+                return `https://raw.githubusercontent.com/Vioneta/vps-frontend/${env.version()}/${sourcePath}`;
               }
               return `no-source/${sourcePath}`;
             }
@@ -72,7 +72,7 @@ const createHacsConfig = ({ isProdBuild, latestBuild, isStatsBuild, isTestBuild 
       latestBuild,
       isStatsBuild,
       isTestBuild,
-    })
+    }),
   );
 
 const bothBuilds = (createConfigFunc, params) => [
@@ -109,7 +109,7 @@ const prodBuild = (conf) =>
     webpack(
       conf,
       // Resolve promise when done. Because we pass a callback, webpack closes itself
-      doneHandler(resolve)
+      doneHandler(resolve),
     );
   });
 
@@ -118,7 +118,7 @@ gulp.task("webpack-watch-app", () => {
   webpack(
     process.env.ES5
       ? bothBuilds(createHacsConfig, { isProdBuild: false })
-      : createHacsConfig({ isProdBuild: false, latestBuild: true })
+      : createHacsConfig({ isProdBuild: false, latestBuild: true }),
   ).watch({ poll: isWsl }, doneHandler());
   gulp.watch(path.join(paths.translations_src, "en.json"), gulp.series("generate-translations"));
 });
@@ -129,8 +129,8 @@ gulp.task("webpack-prod-app", () =>
       isProdBuild: true,
       isStatsBuild: env.isStatsBuild(),
       isTestBuild: env.isTestBuild(),
-    })
-  )
+    }),
+  ),
 );
 
 module.exports = { createHacsConfig };

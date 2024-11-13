@@ -9,7 +9,7 @@ setup(
     url="https://github.com/Vioneta/vps-frontend",
     author="Vioneta",
     author_email="admin@vioneta.com",
-    packages=find_packages(include=["hacs_frontend", "hacs_frontend.*"]),
+    packages=find_packages(include=["vps_frontend", "vps_frontend.*"]),
     include_package_data=True,
     zip_safe=False,
     long_description=Path("README.md").read_text(),

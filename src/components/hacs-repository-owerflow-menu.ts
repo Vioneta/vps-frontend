@@ -105,7 +105,7 @@ export const repositoryMenuItems = memoizeOne(
             label: localize("repository_card.report"),
             action: () =>
               mainWindow.open(
-                `https://github.com/hacs/integration/issues/new?assignees=ludeeus&labels=flag&template=removal.yml&repo=${repository.full_name}&title=Request for removal of ${repository.full_name}`,
+                `https://github.com/Vioneta/integration/issues/new?assignees=Vioneta&labels=flag&template=removal.yml&repo=${repository.full_name}&title=Request for removal of ${repository.full_name}`,
                 "_blank",
                 "noreferrer=true",
               ),

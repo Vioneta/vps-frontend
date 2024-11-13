@@ -1,5 +1,5 @@
 {
-  "name": "plugin-store-frontend",
+  "name": "vioneta-plugin-store-frontend",
   "description": "Frontend of plugin store",
   "scripts": {
     "start": "./script/develop",
@@ -7,12 +7,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vioneta/plugin-store-frontend.git"
+    "url": "git+https://github.com/Vioneta/vps-frontend.git"
   },
   "bugs": {
-    "url": "https://github.com/Vioneta/plugin-store-backend/issues"
+    "url": "https://github.com/Vioneta/integration/issues"
   },
-  "homepage": "https://plugin.vioneta.com/",
+  "homepage": "https://vps.vioneta.com/",
   "type": "module",
   "version": "1.0.0",
   "devDependencies": {

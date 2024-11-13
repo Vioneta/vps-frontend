@@ -203,7 +203,7 @@ export class HacsDashboard extends LitElement {
         </ha-menu-item>
         <ha-menu-item
           .clickAction=${() => {
-            mainWindow.open("https://github.com/hacs", "_blank", "noreferrer=true");
+            mainWindow.open("https://github.com/Vioneta", "_blank", "noreferrer=true");
           }}
         >
           <ha-svg-icon .path=${mdiGithub} slot="start"></ha-svg-icon>
